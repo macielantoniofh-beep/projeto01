@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG DO TONHO</title>
-</head>
-<body>
-    OLÁ
- <br>
-
-   SEGUE AS NOVIDADES
-<br>
-
-
-    POST
-<br>
-
-
-    HISTORICO
-<br>
-
-
-
-</body>
-</html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% for post in posts %}
+        <article class="post">
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <p>{{ post.text|truncatechars:500|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
+{% endblock %}

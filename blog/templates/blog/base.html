@@ -1,31 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG DO TONHO</title>
+    <title>CuriosaMente | Blog de Curiosidades</title>
+    <style>
+        /* Estilização Geral */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Posts */
+        article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+
+        article h2 {
+            color: #e67e22;
+            margin-top: 0;
+        }
+
+        .meta {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
 </head>
 <body>
-    OLÁ
- <br>
 
-   SEGUE AS NOVIDADES
-<br>
+    <header>
+        <h1>CuriosaMente</h1>
+        <p>Desvendando os pequenos mistérios da vida cotidiana</p>
+    </header>
 
-
-    POST
-<br>
-
-
-    HISTORICO
-<br>
-<header class ="page-header">
     <div class="container">
-        <h1><a href="/">Blog Teste</a></h1>
+        
+        <article>
+            <div class="meta">Postado em 24 de Dezembro de 2025</div>
+            <h2>Por que as digitais são únicas?</h2>
+            <p>Você sabia que nem mesmo gêmeos idênticos possuem as mesmas impressões digitais? Embora compartilhem o mesmo DNA, a formação das cristas papilares nos dedos ocorre devido a uma combinação de fatores genéticos e pressões ambientais dentro do útero, como o contato com o líquido amniótico.</p>
+            <p><strong>Curiosidade:</strong> Coalas também possuem digitais quase idênticas às humanas!</p>
+        </article>
+
+        <article>
+            <div class="meta">Postado em 23 de Dezembro de 2025</div>
+            <h2>O segredo do cheiro de chuva</h2>
+            <p>Aquele aroma agradável que sentimos quando começa a chover tem nome: <strong>Petricor</strong>. Ele é causado por uma combinação de óleos vegetais e uma substância chamada <em>geosmina</em>, produzida por bactérias no solo, que são lançadas no ar pelas gotas de água.</p>
+        </article>
+
+        <article>
+            <div class="meta">Postado em 22 de Dezembro de 2025</div>
+            <h2>O coração de uma baleia azul</h2>
+            <p>A vida em escala gigante é fascinante. O coração de uma baleia azul é tão grande que um ser humano adulto poderia nadar através de suas artérias principais. Apesar do tamanho, ele bate apenas de 2 a 10 vezes por minuto durante os mergulhos.</p>
+        </article>
+
     </div>
-</header>
-    {%block content%}
-    {%endblock %}
+
+    <footer>
+        <p> 2025 blog - Explorando.</p>
+    </footer>
 
 </body>
 </html>

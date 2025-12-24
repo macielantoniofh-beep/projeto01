@@ -1,1 +1,1 @@
-# Instalando e testando Django
+# blog simples
